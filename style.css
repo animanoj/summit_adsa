@@ -5,10 +5,6 @@
 h1, h2, h3, h4, h5, h6
 {
     font-family: 'Roboto Slab', serif;
-}
-
-h1, h2, h3, h4, h5, h6
-{
     margin-bottom: 1.1em;
 }
 
@@ -99,7 +95,7 @@ header .container-fluid
 .logo
 {
     background: none;
-    border: 0px;
+    border: 0;
 }
 
 .jumbotron
@@ -143,6 +139,7 @@ header .container-fluid
 {
     padding-top: 3em;
     padding-bottom: 3em;
+    background-color: rgb(128, 215, 247);
     background-color: rgba(128, 215, 247, 0.660);
 }
 
@@ -177,6 +174,7 @@ header .container-fluid
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    padding-top: 50px;
 }
 
 .gallery
@@ -211,6 +209,7 @@ header .container-fluid
 
 footer
 {
+    background-color: rgb(36, 50, 59);
     background-color: rgba(36, 50, 59, 1);
     padding-top: 2em;
     padding-bottom: 1.2em;
@@ -282,7 +281,7 @@ ul.topnav li a {
 ul.topnav li a:hover {background-color: #555;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
-ul.topnav li.icon {display: none;}
+ul.topnav .icon {display: none;}
 
 
 .bt {
