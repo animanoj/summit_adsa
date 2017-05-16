@@ -36,30 +36,32 @@
     </script>
 </head>
 
-<body class="">
-    <nav class="navbar adsa-navbar navbar-fixed-top fadeIn">
+<body>
+    <nav class="navbar navbar-fixed-top fadeIn">
         <div class="mynav">
             <div class="container">
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-               </button>
-                    <a href="#home" class="navbar-brand scroll" color="#fff"><strong><i>ADSA</i></strong></a>
+                    <div class="navbar-default">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-container">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <a href="#home" class="navbar-brand scroll"><img src="adsa_pic_bw.png"></a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div id="navbar-container" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#aboutus" class="scroll" color="#fff">About Us</a>
+                            <a href="#aboutus" class="scroll navbar-items">About Us</a>
                         </li>
                         <li>
-                            <a href="#event" class="scroll" color="#fff">Events</a>
+                            <a href="#event" class="scroll navbar-items">Events</a>
                         </li>
                         <li>
-                            <a href="#contact" class="scroll" color="#fff">Sponsors</a>
+                            <a href="#contact" class="scroll navbar-items">Sponsors</a>
                         </li>
-                        <!--<li class="icon">-->
                     </ul>
                 </div>
             </div>
@@ -69,10 +71,7 @@
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
 
-    <p id="aboutus"> </p>
-
-    <!-- aboutus id is attached just above to account for screen adjustment-->
-    <section class="story wow fadeInUp" data-wow-delay="300ms">
+    <section id="aboutus" class="story wow fadeInUp" data-wow-delay="300ms">
         <!-- change the image in style.css to the class .story .container-fluid [approximately row 141] -->
         <div class="container-fluid">
             <div class="container">
@@ -93,10 +92,10 @@
             </div>
         </div>
     </section>
-    
+
     <section id="contact" class="clients wow fadeInLeft" data-wow-delay="300ms">
         <div class="container" align="center">
-            <h2 color="#ffffff">Sponsors</h2>
+            <h2>Sponsors</h2>
             <div class="row">
                 <div class="col-md-2">
                     <img src="images/logo-sample-01.jpg" class="img-responsive" />
@@ -144,14 +143,11 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
-                    <!--<h3>ADSA @UIUC</h3>-->
-                    <a href="#home"><img src="adsa_pic_bw.png"></a>
-                    <br><br>
+                <div class="col-xs-8">
                     <p>Association of Data Science and Analytics at University of Illinois at Urbana-Champaign</p>
                 </div>
-                <div class="col-md-4">
-                    <p class="text-right social"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i><i class="typcn typcn-social-github-circular"></i><i class="typcn typcn-social-dribbble-circular"></i></p>
+                <div class="col-xs-4">
+                    <p class="text-right"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i><i class="typcn typcn-social-github-circular"></i><i class="typcn typcn--dribbble-circular"></i></p>
                 </div>
             </div>
         </div>
