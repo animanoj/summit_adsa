@@ -17,15 +17,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700,100" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,700,900,500" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700,900" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,500,700,900" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.7/typicons.min.css">
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/css/pushy.css">
-    <link rel="stylesheet" href="assets/css/masonry.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/odometer-theme-default.css">
     <script>
         window.odometerOptions = {
             selector: '.odometer',
@@ -54,10 +50,10 @@
                 <div id="navbar-container" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li>
-                            <a href="#aboutus" class="scroll navbar-items">About Us</a>
+                            <a href="#event" class="scroll navbar-items">Events</a>
                         </li>
                         <li>
-                            <a href="#event" class="scroll navbar-items">Events</a>
+                            <a href="#aboutus" class="scroll navbar-items">About Us</a>
                         </li>
                         <li>
                             <a href="#contact" class="scroll navbar-items">Sponsors</a>
@@ -71,15 +67,41 @@
     <!-- Site Overlay -->
     <div class="site-overlay"></div>
 
-    <section id="aboutus" class="story wow fadeInUp" data-wow-delay="300ms">
-        <!-- change the image in style.css to the class .story .container-fluid [approximately row 141] -->
+    <section id="event" class="events wow fadeInLeft" data-wow-delay="300ms">
+        <div class="container" align="center">
+            <div class="row slides img-wrapper">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/advanced_python_workshop.jpg">
+                    <!--<div class="text">Caption Text</div>-->
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/intro_python_workshop.jpg">
+                    <!--<div class="text">Caption Two</div>-->
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/numpy_workshop.jpg">
+                    <!--<div class="text">Caption Three</div>-->
+                </div>
+                <div class="img-overlay">
+                    <a class="prev btn-responsive" onclick="plusSlides(-1)">&lt;</a>
+                    <a class="next btn-responsive" onclick="plusSlides(1)">&gt;</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="aboutus" class="story wow fadeInDown" data-wow-delay="300ms">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 opaline">
                         <div class="row">
                             <div class="col-md-10 col-md-offset-1">
-                                <p class="lead"><i><font color="#333">Who is ADSA?</font></i></p>
+                                <p class="about-us-intro">Who is ADSA?</p>
                                 <p>Association of Data Science and Analytics (ADSA) is a student organization at UIUC, focusing on data science and analytics. We are dedicated to preparing students for success in the fast-changing and data-driven future.
                                     We aim to train our members to be very best in the fields of data science and analytics throughout countless workshops, projects, and case studies. Check out what we are up to these days!</p>
                                 <h6 class="lead"> – Srujun</h6>
@@ -93,9 +115,9 @@
         </div>
     </section>
 
-    <section id="contact" class="clients wow fadeInLeft" data-wow-delay="300ms">
+    <section id="contact" class="sponsors wow fadeInUp" data-wow-delay="300ms">
         <div class="container" align="center">
-            <h2>Sponsors</h2>
+            <h2 class="sponsors-text">Sponsors</h2>
             <div class="row">
                 <div class="col-md-2">
                     <img src="images/logo-sample-01.jpg" class="img-responsive" />
@@ -118,23 +140,13 @@
             </div>
         </div>
     </section>
-    <section class="prefooter wow fadeInUp" data-wow-delay="300ms">
-        <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
+    <section class="prefooter wow fadeInLeft" data-wow-delay="300ms">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
                         <h3>CONTACT US</h3>
                         <p>Interested in sponsoring the next big event in big data? You can find more information about sponsorship <a href="ADSA-SPONSOR-CHART.pdf" download="ADSA-SPONSOR-CHART.pdf">here</a>. Feel free to reach out with any questions!</p>
-
-
-                        <!--
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="Your Email Here...">
-                                </div>
-                            </div>
-                         -->
                     </div>
                 </div>
             </div>
@@ -147,22 +159,20 @@
                     <p>Association of Data Science and Analytics at University of Illinois at Urbana-Champaign</p>
                 </div>
                 <div class="col-xs-4">
-                    <p class="text-right"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i><i class="typcn typcn-social-github-circular"></i><i class="typcn typcn--dribbble-circular"></i></p>
+                    <p class="text-right"><i class="typcn typcn-social-facebook-circular"></i><i class="typcn typcn-social-twitter-circular"></i><i class="typcn typcn-social-tumbler-circular"></i><i class="typcn typcn-social-github-circular"></i></p>
                 </div>
             </div>
         </div>
     </footer>
+
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+    <script src="scripts.js"></script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.0.4/js/bootstrap-scrollspy.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
-    <script src="http://masonry.desandro.com/masonry.pkgd.js"></script>
-    <script src="assets/js/masonry.js"></script>
-    <script src="assets/js/pushy.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/scripts.js"></script>
