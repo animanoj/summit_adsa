@@ -6,6 +6,12 @@ body {
     padding-top: 65px;
 }
 
+@media(max-width: 767px) {
+    body {
+        padding-top: 50px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
     margin-bottom: 1.1em;
@@ -27,180 +33,8 @@ p {
 
 
 /*------------------------------------*\
-	EVENTS SLIDESHOW
+	NAVBAR
 \*------------------------------------*/
-
-.events {
-    background-color: black;
-}
-
-.mySlides>img {
-    width: 100%;
-    height: 100%;
-}
-
-.img-wrapper {
-    position: relative;
-}
-
-.img-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    text-align: center;
-}
-
-.img-overlay:before {
-    content: ' ';
-    display: block;
-    /* adjust 'height' to position overlay content vertically */
-    height: 50%;
-}
-
-.btn-responsive {
-    padding: 10px 16px;
-    font-size: 18px;
-    line-height: 1.3333333;
-    border-radius: 6px;
-    color: white;
-}
-
-.btn-responsive:hover {
-    color: #f2f2f2;
-    background-color: #717171;
-}
-
-@media (max-width:760px) {
-    .btn-responsive {
-        padding: 1px 5px;
-        font-size: 12px;
-        line-height: 1.5;
-        border-radius: 3px;
-    }
-}
-
-
-/* Next & previous buttons */
-
-.prev {
-    float: left;
-}
-
-.next {
-    float: right;
-}
-
-
-/* Number text (1/3 etc) */
-
-.numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/* Fading animation */
-
-.fade {
-    -webkit-moz-animation-name: fade;
-    -webkit-moz-animation-duration: 1.5s;
-    -webkit-moz-animation-fill-mode: forwards;
-    animation-name: fade;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-}
-
-@-webkit-keyframes fade {
-    from {
-        opacity: .4;
-        visibility: visible;
-    }
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes fade {
-    from {
-        opacity: .4;
-        visibility: visible;
-    }
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-
-/*------------------------------------*\
-	SECTIONS
-\*------------------------------------*/
-
-.opaline {
-    padding-top: 3em;
-    padding-bottom: 3em;
-    background-color: rgb(128, 215, 247);
-    background-color: rgba(128, 215, 247, 0.660);
-}
-
-.opaline .boxes {
-    margin-top: 30px;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    border: 1px solid #FFF;
-}
-
-.story .container-fluid {
-    background-image: url('ADSA.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding-top: 50px;
-}
-
-.prefooter .container-fluid {
-    background: linear-gradient( rgba(33, 37, 43, 0.6), rgba(33, 37, 43, 0.6)), url('https://unsplash.it/4000/3000?image=528');
-}
-
-.prefooter a {
-    color: rgb(42, 236, 238);
-}
-
-.prefooter a:hover {
-    color: rgb(42, 136, 137);
-}
-
-.sponsors-text {
-    color: #555555;
-}
-
-
-/*------------------------------------*\
-	FOOTER
-\*------------------------------------*/
-
-footer {
-    background-color: rgb(36, 50, 59);
-    background-color: rgba(36, 50, 59, 1);
-    padding-top: 2em;
-}
-
-
-/*------------------------------------*\
-	EXTRA STUFF
-\*------------------------------------*/
-
-.about-us-intro {
-    font-size: 150%;
-    font-family: 'Raleway', sans-serif;
-    color: #333;
-    font-style: italic;
-}
 
 .navbar-items {
     color: white !important;
@@ -274,4 +108,182 @@ ul.topnav li a:hover {
 
 ul.topnav .icon {
     display: none;
+}
+
+
+/*------------------------------------*\
+	EVENTS SLIDESHOW
+\*------------------------------------*/
+
+.events {
+    background-color: black;
+}
+
+.mySlides>img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-wrapper {
+    position: relative;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.img-overlay:before {
+    content: ' ';
+    display: block;
+    /* adjust 'height' to position overlay content vertically */
+    height: 50%;
+}
+
+.btn-responsive {
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 6px;
+    color: white;
+}
+
+.btn-responsive:hover {
+    color: #f2f2f2;
+    background-color: #717171;
+}
+
+@media (max-width:767px) {
+    .btn-responsive {
+        padding: 1px 5px;
+        font-size: 12px;
+        line-height: 1.5;
+        border-radius: 3px;
+    }
+}
+
+
+/* Next & previous buttons */
+
+.prev {
+    float: left;
+}
+
+.next {
+    float: right;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-moz-animation-name: fade;
+    -webkit-moz-animation-duration: 1.5s;
+    -webkit-moz-animation-fill-mode: forwards;
+    animation-name: fade;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4;
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4;
+        visibility: visible;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+
+/*------------------------------------*\
+	ABOUT US
+\*------------------------------------*/
+
+.about-us-intro {
+    font-size: 150%;
+    font-family: 'Raleway', sans-serif;
+    color: #333;
+    font-style: italic;
+}
+
+.opaline {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgb(128, 215, 247);
+    background-color: rgba(128, 215, 247, 0.660);
+}
+
+.opaline .boxes {
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border: 1px solid #FFF;
+}
+
+.story .container-fluid {
+    background-image: url('ADSA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+}
+
+/*------------------------------------*\
+	PREFOOTER
+\*------------------------------------*/
+
+
+.prefooter .container-fluid {
+    background: linear-gradient( rgba(33, 37, 43, 0.6), rgba(33, 37, 43, 0.6)), url('https://unsplash.it/4000/3000?image=528');
+}
+
+.prefooter a {
+    color: rgb(42, 236, 238);
+}
+
+.prefooter a:hover {
+    color: rgb(42, 136, 137);
+}
+
+.sponsors-text {
+    color: #555555;
+}
+
+
+/*------------------------------------*\
+	FOOTER
+\*------------------------------------*/
+
+footer {
+    background-color: rgb(36, 50, 59);
+    background-color: rgba(36, 50, 59, 1);
+    padding-top: 2em;
 }
